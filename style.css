@@ -141,3 +141,37 @@ main {
     text-align: justify;
     text-indent: 2em;
 }
+
+#profile {
+    padding: 100px;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-photo {
+    margin-bottom: 25px;
+}
+
+#profile img {
+    width: 220px;
+    height: 229px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f9fafa;
+    box-shadow: 0 0 35px rgba(48, 0, 40, 0.966);
+}
+
+#profile h3 {
+    color: #0e1623;
+    margin: 20px 0;
+}
+
+#profile p {
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 15px;
+}
