@@ -204,6 +204,13 @@ main{
     height: 140px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+#Galery img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
 }
 
 #Galery figcaption{
@@ -235,6 +242,12 @@ figcaption{
     padding:15px;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(243, 223, 134, 0.95);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+#Video figure:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.45);
 }
 
 #Video video{
@@ -363,4 +376,53 @@ text-align:center;
 header h1{
 font-size:1.4rem;
 }
+}
+/* ===== Lightbox CSS-only (klik foto untuk memperbesar) ===== */
+.lightbox{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: background .35s ease, opacity .35s ease, visibility .35s;
+}
+
+.lightbox:target{
+    background: rgba(0,0,0,0.85);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.lightbox img{
+    max-width: 85vw;
+    max-height: 85vh;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    transform: scale(0.7);
+    transition: transform .35s cubic-bezier(.34,1.56,.64,1);
+}
+
+.lightbox:target img{
+    transform: scale(1);
+}
+
+.lightbox-close{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #ffe082;
+    font-size: 2.2rem;
+    text-decoration: none;
+    line-height: 1;
+    transition: transform .25s ease;
+}
+
+.lightbox-close:hover{
+    transform: rotate(90deg);
 }
