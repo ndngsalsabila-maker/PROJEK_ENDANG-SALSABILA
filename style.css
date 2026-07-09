@@ -130,3 +130,14 @@ main {
     transform: translateY(-3px);
     background: #0e1623;
 }
+
+#about {
+    padding: 100px;
+}
+
+#about p {
+    max-width: 1050px;
+    margin: auto auto 50px;
+    text-align: justify;
+    text-indent: 2em;
+}
