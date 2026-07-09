@@ -161,3 +161,59 @@ main{
     text-align:justify;
     text-indent:2em;
 }
+
+#Galery{
+    background:#ffe082;
+    padding:90px 20px;
+    margin-left:calc(-50vw + 50%);
+    margin-right:calc(-50vw + 50%);
+    padding-left:80px;
+    padding-right:80px;
+}
+
+#Galery h2{
+    color: #225414;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#Galery ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding:0;  
+    flex-wrap: nowrap;
+    margin: 0 60px;  
+}
+
+#Galery li{
+    list-style: none;
+}
+
+#Galery figure{
+    background: #225414;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(235, 194, 73, 0.3);
+    text-align: center;
+}
+
+#Galery img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#Galery figcaption{
+    margin-top: 8px;
+    color: #ffe082;
+    font-size: 13px;
+}
+
+figcaption{
+    text-align:center;
+    margin-top:10px;
+    color:#ffe082;
+}
