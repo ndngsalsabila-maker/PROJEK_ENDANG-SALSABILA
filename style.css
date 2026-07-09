@@ -128,3 +128,36 @@ main{
     color: #225414;
     line-height: 1.8;
 }
+
+#Profile{
+    padding:90px 20px;
+}
+
+.profile-container{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.profile-photo{ 
+    margin-bottom:25px;
+}
+
+.profile-photo img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #225414;
+    box-shadow:0 10px 25px rgba(34, 78, 17, 0.95);
+}
+
+.profile-container h3{
+    margin:20px 0;
+    color:#ffe082;
+}
+
+.profile-container p{
+    text-align:justify;
+    text-indent:2em;
+}
