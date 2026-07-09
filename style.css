@@ -69,3 +69,37 @@ main{
     margin:auto;
     padding:20px;
 }
+
+#Home{
+    text-align:center;
+    background:linear-gradient(to bottom,#225414,#33811e);
+    color:#ffe082;
+    padding:120px 20px;
+    border-radius:18px;
+}
+
+#Home h2{
+    color:#ffe082;
+    font-size:3rem;
+}
+
+#Home p{
+    max-width:750px;
+    margin:20px auto;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    text-decoration:none;
+    color:#224d14;
+    background:#ffe082;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#224d18;
+}
