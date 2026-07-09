@@ -1,268 +1,71 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: "Alata",sans-serif;
-    background-color: rgba(48, 0, 40, 0.966);
-    color: rgba(252, 251, 251, 0.98);
-    line-height: 1.7;
+html{
+    scroll-behavior:smooth;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Chelsea Market", cursive;
-    color: #f8fafa;
-    line-height: 1.2;
-}
-section:not(#home, #bukutamu) {
-    padding: 80px 0;
-    border-bottom: 1px solid #0e1623;
+body{
+    font-family:"Playfair Display",serif;
+    background:#225414;
+    color:#ffe082;
+    line-height:1.7;
 }
 
-section h2 {
-    font-family: "Chelsea Market", cursive;
-    color: #f8fafa;
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    text-align: center;
+h1,h2,h3,h4{
+    font-family:"Chelsea Market",cursive;
+    color:#ffe082;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgba(48, 0, 40, 0.966);
-    border-bottom: 2px solid #f8fafa;
-    backdrop-filter: blur(10px);
+section:not(#Home,#bukutamu){
+    padding:80px 0;
+    border-bottom:1px solid #225414;
 }
 
-header h1 {
-    font-family: "Alata", cursive;
-    font-size: 1.5rem;
-    color: #f8fafa;
+section h2{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:35px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background: rgba(34, 78, 17, 0.95);
+    backdrop-filter:blur(8px);
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #f8fafa;
-    font-weight: 500;
-    transition: 0.3s;
+header h1{
+    color:#ffe082;
 }
 
-nav ul li a:hover {
-    color: #f8fafa;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
 }
 
-
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+nav ul li a{
+    text-decoration:none;
+    color:#ffe082;
+    font-weight:bold;
+    transition:.3s;
 }
 
-#home {
-    text-align: center;
-    background: linear-gradient(to bottom, #0e1623,#182e62);
-    padding: 120px 20px;
-    border-radius: 15px;
+nav ul li a:hover{
+    color:#ffe082;
 }
 
-#home h2 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-#home p {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    font-size: 1.15rem;
-}
-
-#home a {
-    display: inline-block;
-    padding: 14px 32px;
-    text-decoration: none;
-    background: #0e1623;
-    color: white;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: 0.3s;
-    box-shadow: 0 0 15px rgba(48, 0, 40, 0.966);
-}
-
-#home a:hover {
-    background: #020c1d;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(48, 0, 40, 0.966);
-}
-
-.btn {
-    display: inline-block;
-    padding:14px 20px;
-    text-decoration: none;
-    color: #f8fafa;
-    background: #0e1623;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: .3s;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    background: #0e1623;
-}
-
-#about {
-    padding: 100px;
-}
-
-#about p {
-    max-width: 1050px;
-    margin: auto auto 50px;
-    text-align: justify;
-    text-indent: 2em;
-}
-
-#profile {
-    padding: 100px;
-}
-
-.profile-container {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.profile-photo {
-    margin-bottom: 25px;
-}
-
-#profile img {
-    width: 220px;
-    height: 229px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #f9fafa;
-    box-shadow: 0 0 35px rgba(48, 0, 40, 0.966);
-}
-
-#profile h3 {
-    color: #0e1623;
-    margin: 20px 0;
-}
-
-#profile p {
-    text-align: justify;
-    text-indent: 2em;
-    margin-bottom: 15px;
-}
-
-#Galery ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 0 40px;
-}
-
-#Galery ul li {
-    list-style: none;
-}
-
-.foto-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    background: #0e1623;
-    transition: 0.4s;
-    box-shadow: 0 5px 15px rgba(48, 0, 40, 0.966);
-}
-
-.foto-card:hover {
-    transform: translateY(-18px);
-    box-shadow: 0 15px 30px rgba(48, 0, 40, 0.966);
-}
-
-.foto-card img {
-    width: 100%;
-    height: 184px;
-    object-fit: cover;
-    transition: 0.5s;
-}
-
-.foto-card:hover img {
-    transform: scale(1.08);
-}
-
-.caption1 {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background:  #f8fafa;
-    color:  #f8fafa;
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.foto-card figcaption {
-    font-family: "Alata", sans-serif;
-    padding: 20px;
-}
-
-.foto-card h4 {
-    font-family: "Chelsea Market", cursive;
-    color:  #f8fafa;
-    margin-bottom: 10px;
-}
-
-#video-grid {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 25px;
-}
-
-#video figure {
-    background: #0e1623;
-    padding: 15px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-#video figure:hover {
-    transform: translateY(-5px)
-}
-
-#video-grid video {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-#video figcaption h3 {
-    font-family: "Chelsea Market", cursive;
-    text-align: center;
-    margin-top: 0px;
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
 }
