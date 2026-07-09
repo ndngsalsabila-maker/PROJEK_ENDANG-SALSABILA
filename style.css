@@ -175,3 +175,63 @@ main {
     text-indent: 2em;
     margin-bottom: 15px;
 }
+
+#Galery ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 40px;
+}
+
+#Galery ul li {
+    list-style: none;
+}
+
+.foto-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #0e1623;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(48, 0, 40, 0.966);
+}
+
+.foto-card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 15px 30px rgba(48, 0, 40, 0.966);
+}
+
+.foto-card img {
+    width: 100%;
+    height: 184px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.foto-card:hover img {
+    transform: scale(1.08);
+}
+
+.caption1 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background:  #f8fafa;
+    color:  #f8fafa;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.foto-card figcaption {
+    font-family: "Alata", sans-serif;
+    padding: 20px;
+}
+
+.foto-card h4 {
+    font-family: "Chelsea Market", cursive;
+    color:  #f8fafa;
+    margin-bottom: 10px;
+}
